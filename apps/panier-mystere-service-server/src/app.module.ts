@@ -1,8 +1,4 @@
 import { Module } from "@nestjs/common";
-import { RestaurantModule } from "./restaurant/restaurant.module";
-import { UtilisateurModule } from "./utilisateur/utilisateur.module";
-import { CommandeModule } from "./commande/commande.module";
-import { PanierMystereModule } from "./panierMystere/panierMystere.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -15,10 +11,6 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
 @Module({
   controllers: [],
   imports: [
-    RestaurantModule,
-    UtilisateurModule,
-    CommandeModule,
-    PanierMystereModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
